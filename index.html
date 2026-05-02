@@ -477,12 +477,20 @@
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     font-weight: 900;
-    color: rgba(193,122,58,0.12);
+    background: linear-gradient(135deg, rgba(193,122,58,0.35), rgba(193,122,58,0.25));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     line-height: 1;
     margin-bottom: 1rem;
-    transition: color 0.4s;
+    transition: all 0.4s;
   }
-  .project-card:hover .project-num { color: rgba(193,122,58,0.25); }
+  .project-card:hover .project-num {
+    background: linear-gradient(135deg, rgba(193,122,58,0.55), rgba(193,122,58,0.45));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
  
   .project-title {
     font-family: 'Playfair Display', serif;
@@ -1030,6 +1038,20 @@
             <p>Backend Development & APIs</p>
           </div>
         </div>
+        <div class="info-item">
+          <div class="info-icon">🔗</div>
+          <div class="info-text">
+            <h4>LinkedIn</h4>
+            <p>5K+ Connections</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">💻</div>
+          <div class="info-text">
+            <h4>LeetCode</h4>
+            <p>60+ Questions Solved</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="about-card reveal reveal-delay">
@@ -1138,16 +1160,18 @@
     </div>
     <div class="project-card">
       <div class="project-num">03</div>
-      <h3 class="project-title">Your Next Project</h3>
+      <h3 class="project-title">Chat Application</h3>
       <p class="project-desc">
-        Add your third project here — showcase your best work and the technologies
-        you used to build it.
+        Real-time messaging platform enabling live chat between two users using WebSocket technology.
+        Built with FastAPI for seamless bidirectional communication and scalable architecture for future enhancements.
       </p>
       <div class="project-tags">
         <span class="project-tag">Python</span>
         <span class="project-tag">FastAPI</span>
+        <span class="project-tag">WebSockets</span>
+        <span class="project-tag">Real-time</span>
       </div>
-      <a href="#" class="project-link">View on GitHub →</a>
+      <a href="https://github.com/noman-talib/ChatApplication" target="_blank" class="project-link">View on GitHub →</a>
     </div>
   </div>
 </section>
